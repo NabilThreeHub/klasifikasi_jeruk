@@ -24,7 +24,7 @@ if st.button("Prediksi", type="primary"):
 	data_baru=pd.DataFrame([[7.89, 100, 0.35, 10, "Jawa Tengah", "hijau", "hujan"]], columns=["diameter", "berat", "tebal_kulit", "kadar_gula", "asal_daerah", 	"warna", "musim_panen"])
 	prediksi = model.predict(data_baru)[0]
 	presentase=max(model.predict_proba(data_baru)[0])
-	st.success(f"Memprediksi dengan **{prediksi}** dengan keyakinan **{presentase*100:.2f}%**")
+	st.success(f" Memprediksi dengan **{prediksi}** dengan keyakinan **{presentase*100:.2f}%**")
 	st.ballons()
 st.divider()
-st.caption(Dibuat dengan :tangerine: oleh **Nabil Albara**")
+st.caption("Dibuat dengan :tangerine: oleh **Nabil Albara**")
